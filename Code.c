@@ -3,14 +3,14 @@
 #include <string.h>
 #include "htmlFunctions.h"
 
-int main(int argc, char *argv[]){
+int main(){
     FILE* linksFile = NULL;
     FILE* web = fopen("website.html", "w");
     char webLink[256] = "\0";
-    char linkFileName[256] = "";
+    char linkFileName[256] = "\0";
 
     if(web == NULL){
-        printf("error opening a Links.txt file :<");
+        printf("error creating website.html file :<\n");
         exit(1);
     }
 
